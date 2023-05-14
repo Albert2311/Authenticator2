@@ -10,20 +10,9 @@ if (!isset($_SESSION['auth_secret'])) {
 $qrCodeUrl = $Authenticator->getQR('myPHPnotes', $_SESSION['auth_secret']);
 $code = $Authenticator->getCode($_SESSION['auth_secret']);
 
-// $verifyCode = $Authenticator->verifyCode($_SESSION['auth_secret'], $_POST['OTPverify']);
-// require "Authenticator.php";
-// if ($Authenticator->verifyCode($_SESSION['auth_secret'], $_POST['OTPverify'], $discrepancy =1 )) {
-//     echo 'Mã xác thực hợp lệ';
-// } else {
-//     echo 'Mã xác thực không hợp lệ';
-// }
 if (!isset($_SESSION['failed'])) {
     $_SESSION['failed'] = false;
 }
-// echo $_SESSION['auth_secret'];echo "\n";
-// echo $code;echo "\n";
-// echo $_POST['OTPverify'];
-// echo $verifyCode;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,7 +57,7 @@ if (!isset($_SESSION['failed'])) {
                         <!-- end thong bao loi -->   
                             <h2 >Nhập mã OTP</h2>
                             <div style="text-align: center;">
-                            <img style="text-align: center;;" class="img-fluid" src="<?php   echo $qrCodeUrl ?>" alt="Verify this Google Authenticator"><br><br>        
+                            <!-- <img style="text-align: center;;" class="img-fluid" src="<?php   echo $qrCodeUrl ?>" alt="Verify this Google Authenticator"><br><br>         -->
                                 <input name="OTPverify" type="text" class="form-control" required placeholder="******" style="font-size: xx-large;width: 200px;border-radius: 0px;text-align: center;display: inline;color: #0275d8;"><br> <br>    
                                 <button name="verifyEmail" type="submit" class="btn btn-md btn-primary" style="width: 200px;border-radius: 0px;">Verify</button>
                             </div>
@@ -80,8 +69,6 @@ if (!isset($_SESSION['failed'])) {
                                  <!-- send back otp  -->
                                 <input id ="resendingPass" name="resendingPass" type="submit" value="Chưa nhận được OTP?" class="btn btn-link" style="text-align: center;"></input>
                                 <!-- < send back otp  -->
-                                <p>Have an account! <a href="home.php">home</a>.</p>
-                                <p>Have an account! <a href="register.php">register</a>.</p>
                             </div>
                         </form>
                         <!-- end form 2 -->

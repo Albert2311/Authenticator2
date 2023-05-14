@@ -55,7 +55,6 @@
                             <button type="submit" name="changePassword" value="Save">Save</button>
                         </form>
                         <div class="social-icons">
-                            <p>Have an account! <a href="index.php">Login</a>.</p>
                         </div>
                     </div>
                 </div>
