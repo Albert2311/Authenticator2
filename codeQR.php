@@ -44,7 +44,7 @@ if (!isset($_SESSION['failed'])) {
                                 foreach($errors AS $displayErrors){
                         ?>
                             <div id="alert" class="alert alert-danger" role="alert">
-                            <!-- <?php echo $displayErrors; ?> -->
+                            <?php echo $displayErrors; ?>
                             <!-- <script>alert(' <?php echo $displayErrors; ?>')</script> -->
                             </div>
                         <?php
