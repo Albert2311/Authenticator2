@@ -81,8 +81,6 @@ if (!isset($_SESSION['failed'])) {
                                  <!-- send back otp  -->
                                 <input id ="resending" name="resending" type="submit" value="Chưa nhận được OTP?" class="btn btn-link" style="text-align: center;"></input>
                                 <!-- < send back otp  -->
-                                <p>Have an account! <a href="home.php">home</a>.</p>
-                                <p>Have an account! <a href="register.php">register</a>.</p>
                             </div>
                         </form>
                         <!-- end form 2 -->
