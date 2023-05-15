@@ -25,26 +25,50 @@ if (!$checkResult) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <meta name="description" content="Implement Google like Time-Based Authentication into your existing PHP application. And learn How to Build it? How it Works? and Why is it Necessary these days."/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link rel='shortcut icon' href='/favicon.ico'  />
-    <style>
-        body,html {
-            height: 100%;
-        }       
-        .bg { 
-            background-image: url("images/bg.jpg");
-            height: 100%; 
-            background-position: center;
-            background-repeat: no-repeat;
-           
-            background-size: cover;
-        }
-    </style>
 </head>
-<body  class="bg">
-        welcome home
+<body>
+        <!-- welcome home
         <a href="logout.php" class="header__navbar-icon-link">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        <p>Đăng xuất</p></a>
+        <p>Đăng xuất</p></a> -->
+        
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<div class="menu-area">
+		<a class="logo" href="#">company name</a>
+		<ul class="nav">
+			<li>
+				<a href="#home">Home</a>
+			</li>
+			<li>
+				<a href="#about">About</a>
+			</li>
+		</ul>
+	</div>
+	<section id="home">
+		<div class="content">
+			<h1>NoBrain Group</h1>
+			<p>Trần Tấn Trung - 46.01.104.202</p>
+            <p>Phạm Nguyệt Anh - 46.01.104.005</p>
+            <p>Nguyễn Văn Toàn - 46.01.104.183</p>
+            <p>Trần Thái Nguyên - 46.01.104.126</p>
+            <a href="logout.php"><button class="button-34" role="button">Đăng xuất</button></a>
+		</div>
+	</section>
+	
+    <a href="logout.php"><p>Đăng xuất</p></a>
+        
+</body>
+</html>
+
 
