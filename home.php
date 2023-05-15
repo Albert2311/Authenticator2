@@ -2,19 +2,19 @@
 include_once("controller2.php"); 
 ?>
 <?php
-// if ($_SERVER['REQUEST_METHOD'] != "POST") {
-//     header("location: codeQR.php");
-//     die();
-// }
-// $Authenticator = new Authenticator();
+if ($_SERVER['REQUEST_METHOD'] != "POST") {
+    header("location: codeQR.php");
+    die();
+}
+$Authenticator = new Authenticator();
 
-// $checkResult = $Authenticator->verifyCode($_SESSION['auth_secret'], $_POST['otp'], 3);    // 2 = 2*30sec clock tolerance
+$checkResult = $Authenticator->verifyCode($_SESSION['auth_secret'], $_POST['otp'], 3);    // 2 = 2*30sec clock tolerance
 
-// if (!$checkResult) {
-//     $_SESSION['failed'] = true;
-//     header("location: codeQR.php");
-//     die();
-// } 
+if (!$checkResult) {
+    $_SESSION['failed'] = true;
+    header("location: codeQR.php");
+    die();
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
