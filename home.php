@@ -45,7 +45,7 @@ if (!$checkResult) {
 </head>
 <body>
 	<div class="menu-area">
-		<a class="logo" href="#">company name</a>
+		<a class="logo" href="#">Computer Network Security</a>
 		<ul class="nav">
 			<li>
 				<a href="#home">Home</a>
